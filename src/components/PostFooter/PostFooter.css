@@ -1,0 +1,37 @@
+/* The author credit area after the post */
+.post-footer {
+    position: relative;
+    border-top: #ebf2f6 1px solid;
+    height: auto;
+}
+
+.post-footer h4 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.post-footer p {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    line-height: 1.75em;
+}
+
+.post-footer h4 a {
+    color: #2e2e2e;
+    text-decoration: none;
+}
+
+.post-footer h4 a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+       Media Queries - Smaller than 500px
+   ========================================================================== */
+
+@media only screen and (max-width: 500px) {
+    .post-footer {
+        padding: 5rem 0 3rem;
+        text-align: center;
+    }
+}
