@@ -1,0 +1,13 @@
+{
+    "uid": "judohippo",
+    "name": "TJ Gillis",
+    "image": "https://api.adorable.io/avatars/150/test.png",
+    "url": "http://openbracket.ca/",
+    "location": "Halifax, NS, Canada",
+    "bio": "1 part father, 1 part coder, 1 part gamer, 1 part beer",
+    "socialUrls": [
+      "https://github.com/gatsbyjs",
+      "https://twitter.com/gatsbyjs",
+      "mailto:gatsbyjs@example.com"
+    ]
+  }

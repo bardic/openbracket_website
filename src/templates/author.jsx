@@ -27,7 +27,7 @@ class AuthorTemplate extends React.Component {
     menuOpen: false
   };
 
-  handleOnClick = evt => {
+handleOnClick = evt => {
     evt.stopPropagation();
     if (this.state.menuOpen) {
       this.closeMenu();
@@ -60,52 +60,10 @@ class AuthorTemplate extends React.Component {
       this.props.data.allAuthorsJson && this.props.data.allAuthorsJson.edges
         ? this.props.data.allAuthorsJson.edges
         : [];
-    const getAuthor = () => authorsEdges[0].node;
+   // const getAuthor = () => authorsEdges[0].node;
 
     return (
-      <Layout location={this.props.location}>
-        <Drawer className="author-template" isOpen={this.state.menuOpen}>
-          <Helmet title={`Posts by "${author}" | ${config.siteTitle}`} />
-
-          {/* The blog navigation links */}
-          <Navigation config={config} onClose={this.handleOnClose} />
-
-          <SiteWrapper>
-            <MainHeader className="author-head">
-              <MainNav>
-                <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
-                <MenuButton
-                  navigation={config.siteNavigation}
-                  onClick={this.handleOnClick}
-                />
-              </MainNav>
-            </MainHeader>
-
-            <AuthorProfile className="inner">
-              <AuthorImage author={getAuthor()} />
-              <AuthorName name={getAuthor().name} />
-              <AuthorBio bio={getAuthor().bio} />
-              <AuthorMeta>
-                <AuthorLocation location={getAuthor().location} />
-                <AuthorWebsite url={getAuthor().url} />
-              </AuthorMeta>
-              <AuthorStats postEdges={postEdges} />
-            </AuthorProfile>
-
-            {/* PostListing component renders all the posts */}
-            <PostListing postEdges={postEdges} postAuthors={authorsEdges} />
-
-            {/* Social information here */}
-            <SocialMediaIcons urls={getAuthor().socialUrls} />
-
-            {/* The tiny footer at the very bottom */}
-            <Footer
-              copyright={config.copyright}
-              promoteGatsby={config.promoteGatsby}
-            />
-          </SiteWrapper>
-        </Drawer>
-      </Layout>
+      <div/>
     );
   }
 }

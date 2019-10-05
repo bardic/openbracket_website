@@ -6,8 +6,9 @@ module.exports = {
   siteTitleAlt: "Openbracket", // Alternative site title for SEO.
   siteUrl: "https://openbracket.ca", // Domain of your website without pathPrefix.
   pathPrefix: "/openbracket", // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
-  //siteDescription:"Openbracket blog: The musings of TJ GIllis", // Website description used for RSS feeds/meta description tag.
- // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
+  description: "",
+  siteDescription:"Openbracket blog: The musings of TJ GIllis", // Website description used for RSS feeds/meta description tag.
+ // Optional, the cover vimage used in header for home page. e.g: "/images/blog-cover.jpg",
   siteNavigation: true, // If navigation is enabled the Menu button will be visible
   siteRss: "/rss.xml", // Path to the RSS file.
   siteRssAuthor: "TJ Gillis", // The author name used in the RSS file
